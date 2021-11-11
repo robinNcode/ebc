@@ -34,6 +34,11 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->post('login', 'Home::loginAttempt');
+$routes->get('dashboard', 'Home::dashboard');
+
+$routes->presenter('bill', ['controller' => 'Bill', 'placeholder' => '(:num)']);
+
+
 
 
 /*

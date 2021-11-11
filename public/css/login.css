@@ -13,7 +13,7 @@ body {
 .sidenav {
     height: 100%;
     overflow-x: hidden;
-    background-image: url("../images/loginBlur.jpg");
+    background-image: url("../images/loginBlur1.jpg");
     background-repeat: no-repeat;
 }
 
@@ -71,4 +71,13 @@ body {
 .btn-black{
     background-color: #000 !important;
     color: #fff;
+}
+
+h2{
+    font-size: 40px;
+    -webkit-text-stroke: 1px black;
+}
+
+h5{
+    -webkit-text-stroke: 1px black;
 }

@@ -42,6 +42,9 @@ class LoginModel extends Model
 
     public function checkUser($user, $password)
     {
-
+        return $this->builder->select('id as user_id')
+            ->where('user', $user)
+            ->where('password', $password)
+            ->get()->getRow();
     }
 }
